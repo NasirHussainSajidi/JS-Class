@@ -1,0 +1,11 @@
+h3{
+    color: blue;
+
+}
+h3:hover{
+    cursor: pointer;
+    color: red;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
