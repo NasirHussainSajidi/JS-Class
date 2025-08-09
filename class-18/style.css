@@ -1,0 +1,11 @@
+#image_shower{
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    margin: auto;
+}
+#inner_container{
+    height: 100vh;
+    background-image: url(hiw.webp);
+    background-size: cover;
+}

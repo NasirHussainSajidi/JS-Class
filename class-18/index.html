@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #inner_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* background-color: rgb(195, 202, 199); */
+        }
+        #image_shower{
+            height: 300px;
+            width: 250px;
+
+            /* border-radius: 10px; */
+            /* background-color: aqua; */
+            /* background-color: rgb(195, 202, 199); */
+            /* border: 3px solid black; */
+            /* box-shadow: 4px 4px 8px 5px rgb(105, 60, 60); */
+        }
+        #image_shower {
+            /* position: relative;
+            transition: left 2s;
+            left: 0px; */
+            width: 30%;
+       }
+
+        /* #image_shower.move{
+            left: 350px;
+        } */
+        #image_shower:hover{
+            transition: 0,5s ease all;
+            cursor: pointer;
+            transform: translateX(360deg);
+            animation: zoom-in 1s linear infinite;
+            
+            /* animation:  infinite alternate 2s infinite alternate-reverse; */
+        }
+        @keyframes zoom-in{
+            0%{
+                width: 30%;
+            }
+            100%{
+                width: 40%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+        <div id="inner_container">
+            <img id="image_shower" onmouseover="get_random_image()" src="car1.webp">
+        </div>
+        <div id="button_container">
+
+            <!-- <button onclick="get_random_image()"> click me!</button> -->
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>
