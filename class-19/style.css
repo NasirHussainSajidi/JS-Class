@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("hiw.webp");
+    background-size: cover;
+}
+
+/* .img-container{
+    border-radius: 50px;
+
+} */
+#img-swp{
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
+}
+#img-swp:hover{
+    cursor: pointer;
+    transform: translate(-50%, -50%) scale(1.05);
+    transition: transform 0.3s ease in-out cubic-bezier(0.075, 0.82, 0.165, 1) ;
+    
+}
